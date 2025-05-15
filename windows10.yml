@@ -6,11 +6,11 @@ services:
     environment:
       VERSION: "10"
       USERNAME: "MASTER"
-      PASSWORD: "@myadmin888"
-      RAM_SIZE: "13G"
+      PASSWORD: "admin@123"
+      RAM_SIZE: "10G"
       CPU_CORES: "4"
-      DISK_SIZE: "15G"
-      DISK2_SIZE: "15G"
+      DISK_SIZE: "400G"
+      DISK2_SIZE: "100G"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -20,6 +20,6 @@ services:
       - "8006:8006"
       - "3389:3389/tcp"
       - "3389:3389/udp"
-    stop_grace_period: 2m
+    stop_grace_period: 345m
     volumes:
       - /tmp/windows-storage:/storage
